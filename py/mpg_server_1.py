@@ -33,7 +33,7 @@ def calc_mpg():
     # Check for valid input fields 
     for name in content:
       if name in EXPECTED:
-        expected_min = EXPECTED[name]['min']
+        expected_min = EXPECTED[name]['min'] # need to optimize
         expected_max = EXPECTED[name]['max']
         value = content[name]
         if value < expected_min or value > expected_max:
